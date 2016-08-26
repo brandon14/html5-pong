@@ -1,0 +1,23 @@
+#canvas {
+  background-color: #242424;
+}
+
+#canvas-holder {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Disable canvas because the screen is too small */
+@media (max-width: 750px) {
+  #canvas-holder {
+    display: none;
+  }
+
+  #screen-too-small {
+    display: inline;
+  }
+
+  #controls {
+    display: none;
+  }
+}
