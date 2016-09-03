@@ -78,9 +78,9 @@ function GameBoard(fGameSettings, fCanvas) {
                               this.gameSettings.playerTwoColor,
                               this.gameSettings.paddleSpeed);
 
-  this.ball = new Ball(this.width / 2, 
-                       this.height / 2, 
-                       this.gameSettings.ballRadius, 
+  this.ball = new Ball(this.width / 2,
+                       this.height / 2,
+                       this.gameSettings.ballRadius,
                        this.gameSettings.ballColor,
                        this.gameSettings.ballSpeed,
                        this.width,
@@ -286,13 +286,13 @@ Ball.prototype.checkCollision = function(fPlayerOne, fPlayerTwo) {
   }
 
   if (this.dx > 0) {
-    if (fPlayerTwo.x - (fPlayerTwo.width / 2) <= this.x + this.radius && 
+    if (fPlayerTwo.x - (fPlayerTwo.width / 2) <= this.x + this.radius &&
         fPlayerTwo.x - (fPlayerTwo.width / 2) > this.x - this.dx + this.radius) {
       var collisionDiff = this.x + this.radius - (fPlayerTwo.x - (fPlayerTwo.width / 2));
       var tK = collisionDiff / this.dx;
       var tY = this.dy * tK + (this.y - this.dy);
 
-      if (tY + this.radius >= fPlayerTwo.y - (fPlayerTwo.height / 2) && 
+      if (tY + this.radius >= fPlayerTwo.y - (fPlayerTwo.height / 2) &&
           tY - this.radius <= fPlayerTwo.y + (fPlayerTwo.height / 2)) {
         var impact = this.y - fPlayerTwo.y;
 
@@ -308,7 +308,7 @@ Ball.prototype.checkCollision = function(fPlayerOne, fPlayerTwo) {
       var tK = collisionDiff / -(this.dx);
       var tY = this.dy * tK + (this.y - this.dy);
 
-      if (tY + this.radius >= fPlayerOne.y - (fPlayerOne.height / 2) && 
+      if (tY + this.radius >= fPlayerOne.y - (fPlayerOne.height / 2) &&
           tY - this.radius <= fPlayerOne.y + (fPlayerOne.height / 2)) {
         var impact = this.y - fPlayerOne.y;
 
@@ -452,7 +452,7 @@ var GameLoop = (function GameLoop() {
     // R was pressed, reset
     if (fEvent.which === 114 ) {
       reset();
-    }    
+    }
   }
 
   function start() {
