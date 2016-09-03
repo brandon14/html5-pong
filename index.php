@@ -49,10 +49,9 @@
   <div class="container">
     <!-- Navbar header -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="./">HTML5 Pong</a>
+      <a class="navbar-brand visible-xs" href="./">HTML5 Pong</a>
       <!-- Navbar collapse button -->
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
