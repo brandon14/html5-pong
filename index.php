@@ -85,7 +85,7 @@
       <ul>
         <li>P1 UP -> W</li>
         <li>P1 DOWN -> S</li>
-        <li>P2 UP -> Osw</li>
+        <li>P2 UP -> O</li>
         <li>P2 DOWN -> K</li>
         <li>START/PAUSE -> SPACEBAR</li>
         <li>RESET -> R</li>
