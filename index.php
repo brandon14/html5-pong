@@ -2,7 +2,7 @@
 require_once('../../phpincludes/last-modified.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: http://ogp.me/ns#">
 <head>
   <!-- General metadata -->
   <meta charset="utf-8">
@@ -11,9 +11,22 @@ require_once('../../phpincludes/last-modified.php');
   <meta name="description"           content="A website I made to create a simple HTML5 pong game.">
   <meta name="author"                content="Brandon Clothier">
   <link rel="copyright"              href="#copyright">
+  <link rel="icon"                   href="../favicon.ico" type="image/x-icon" />
 
   <!-- Theme meta for Google Chrome on Android -->
   <meta name="theme-color"           content="#ff5722">
+  
+  <!-- Facebook OpenGraph meta -->
+  <meta property="og:url"            content="http://www.brandonclothier.net16.net/html5-pong" />
+  <meta property="og:type"           content="website" />
+  <meta property="og:title"          content="HTML5 Pong" />
+  <meta property="og:description"    content="A simple HTML5 Pong game." />
+  <meta property="og:image"          content="http://www.brandonclothier.net16.net/images/logo-large.png" />
+
+  <!-- Twitter meta -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@inhal3exh4le" />
+  <meta name="twitter:creator" content="@inhal3exh4le" />
 
   <title>An HTML5 pong game by Brandon Clothier</title>
 
@@ -140,7 +153,7 @@ require_once('../../phpincludes/last-modified.php');
 <script src="../vendor/js/material.min.js"></script>
 <script src="../vendor/js/ripples.min.js"></script>
 <!-- JavaSCript functions for the page operation -->
-<script src="../vendor/js/page-functions.min.js"></script>
+<script src="../js/page-functions.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
 <!-- Init material design bootstrap -->
